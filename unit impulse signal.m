@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+t=-5:0.5:5;
+t1=0:1:20;
+y=(t==0);
+figure(1);
+subplot(2,1,1);
+plot(t,y,'r');
+subplot(2,1,2);
+stem(t1,y,'r');

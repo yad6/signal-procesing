@@ -1,0 +1,18 @@
+clc;
+clear all;
+close all;
+x=-1:.1:1;
+y=exp((-(x.^2))/2);
+row=2;
+col=1;
+figure(1);
+subplot(row,col,1);
+stem(x,y);
+grid on;
+xlabel('x');
+ylabel('y');
+subplot(row,col,2);
+plot(x,y);
+grid on;
+xlabel('x');
+ylabel('y');

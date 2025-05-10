@@ -1,0 +1,18 @@
+clc;
+clear;
+close all;
+x=0:.2:2;
+y=sin(7*x)+sin(10*x);
+row=2;
+col=1;
+figure(1);
+subplot(row,col,1);
+stem(x,y);
+grid on;
+xlabel('x');
+ylabel('y'); 
+subplot(row,col,2);
+plot(x,y);
+grid on;
+xlabel('t(in sec)');
+ylabel('y');

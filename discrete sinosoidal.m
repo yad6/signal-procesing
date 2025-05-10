@@ -1,0 +1,17 @@
+clc;
+clear all;
+close all;
+a=input('amplitude');
+f=input('frequncy');
+t=input('duration');
+fs=input('sample fre');
+t1=0:0.002:t;
+y=a*sin(2*pi*f*t1);
+td=1/fs;
+t2=0:td:t;
+y1=a*sin(2*pi*fs*t2);
+figure(1);
+subplot(2,1,1);
+plot(t1,y,'r');
+subplot(2,1,2);
+stem(t2,y1,'r');
